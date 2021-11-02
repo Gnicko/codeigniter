@@ -31,9 +31,9 @@ class Login extends BaseController
                     ->withInput();
             }
         }
-        $session->set([
-            'username'  => 'johndoe',
-            'email'     => 'johndoe@some-site.com',
+        d($data);
+        session()->set([
+            'username'  => $data[0]['email'],
             'logged_in' => true,
         ]);
         return redirect()->to(base_url("home/"));

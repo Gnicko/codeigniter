@@ -142,5 +142,8 @@ public function buscarDNI()
                     return view('usuarios/usuarios', $data);
                 }
     }
-
+    public function cargarTabla(){
+        $userModel = new UserModel();
+        return json_encode($userModel->obtenerDatosParaTabla());
+    }
 }

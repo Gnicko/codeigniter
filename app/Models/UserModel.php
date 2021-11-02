@@ -51,4 +51,12 @@ class UserModel extends Model
                 ->join('roles', "roles.id = usuarios.id_rol")->get()->getResultArray();
 }
 
+    public function obtenerDatosParaTabla(){
+        {
+            return $this->db->table('usuarios')
+                ->select('usuarios.*,roles.id rol_id,roles.nombre rol_nombre,roles.descripcion rol_descripcion')
+                ->join('roles', 'roles.id=usuarios.id_rol')
+                ->get()->getResult();
+        }
+    }
 }
