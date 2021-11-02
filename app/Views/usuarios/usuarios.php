@@ -279,10 +279,10 @@
 <script>
     var baseurl='<?= base_url( )?>'
 </script>
-<script src="<?= base_url('public/asserts/Js/tables.js')?>">  </script>
 <script src="<?= base_url('public/asserts/DataTable/datatables.js')?>">  </script>
 <script src="<?= base_url('public/asserts/DataTable/DataTables-1.11.3/js/dataTables.bootstrap4.js')?>">  </script>
 <script src="<?= base_url('public/asserts/DataTable/DataTables-1.11.3/js/jquery.dataTables.js')?>">  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="<?= base_url('public/asserts/Js/tables.js')?>">  </script>
 </html>
